@@ -10,7 +10,7 @@
       <post-content v-else :post="post" />
       <v-card-actions>
         <v-btn text color="orange" @click="onRetweet">
-          <v-icon>mdi-twitter-retweet</v-icon>
+          <v-icon>mdi-autorenew</v-icon>
         </v-btn>
         <v-btn text color="orange" @click="onClickHeart">
           <v-icon>{{ heartIcon }}</v-icon>
@@ -26,7 +26,6 @@
           </template>
           <div style="background: white">
             <v-btn dark color="red" @click="onRemovePost">삭제</v-btn>
-            <v-btn text color="orange" @click="onEditPost">수정</v-btn>
           </div>
         </v-menu>
       </v-card-actions>
@@ -35,9 +34,6 @@
       <comment-form :post-id="post.id" />
       <v-list>
         <v-list-item v-for="c in post.Comments" :key="c.id">
-          <v-list-item-avatar color="teal">
-            <span>{{ c.User.nickname[0] }}</span>
-          </v-list-item-avatar>
           <v-list-item-content>
             <h3>{{ c.User.nickname }}</h3>
             <div>{{ c.content }}</div>
@@ -51,6 +47,7 @@
 <script>
   import CommentForm from '~/components/CommentForm';
   import PostContent from '~/components/PostContent';
+  
   export default {
     components: {
       CommentForm,

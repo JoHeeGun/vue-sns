@@ -1,6 +1,7 @@
 <template>
   <v-container>
     <post-form v-if="me" />
+    <search-hash-tag />
     <div>
       <post-card v-for="p in mainPosts" :key="p.id" :post="p" />
     </div>
@@ -10,10 +11,13 @@
 <script>
   import PostCard from '~/components/PostCard';
   import PostForm from '~/components/PostForm';
+  import SearchHashTag from '../components/SearchHashTag.vue';
+
   export default {
     components: {
       PostCard,
       PostForm,
+      SearchHashTag,
     },
     data() {
       return {

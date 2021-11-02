@@ -1,6 +1,7 @@
 <template>
   <div>
     <v-container>
+      <br>
       <v-card>
         <v-container>
           <v-subheader>회원가입</v-subheader>
@@ -33,13 +34,8 @@
               :rules="nicknameRules"
               required
             />
-            <v-checkbox
-              v-model="terms"
-              required
-              :rules="[v => !!v || '약관에 동의해야 합니다.']"
-              label="제로초 말을 잘 들을 것을 약속합니다."
-            />
-            <v-btn color="green" type="submit">가입하기</v-btn>
+
+            <v-btn color="gray" type="submit">가입하기</v-btn>
           </v-form>
         </v-container>
       </v-card>

@@ -3,6 +3,17 @@
     <v-container>
       <v-card style="margin-bottom: 20px">
         <v-container>
+          {{ me.nickname }}님의 프로필입니다
+          <v-row>
+            <v-col cols="4">{{ me.Followings.length }} 팔로잉</v-col>
+            <v-col cols="4">{{ me.Followers.length }} 팔로워</v-col>
+            <v-col cols="4">{{ me.Posts.length }} 게시글</v-col>
+          </v-row>
+        </v-container>
+      </v-card>
+      
+      <v-card style="margin-bottom: 20px">
+        <v-container>
           <v-subheader>내 프로필</v-subheader>
           <v-form v-model="valid" @submit.prevent="onChangeNickname">
             <v-text-field
@@ -11,10 +22,13 @@
               :rules="nicknameRules"
               required
             />
-            <v-btn dark color="blue" type="submit">수정</v-btn>
+            <v-btn dark color="gray" type="submit">수정</v-btn>
           </v-form>
         </v-container>
       </v-card>
+     
+      
+
       <v-card style="margin-bottom: 20px">
         <v-container>
           <v-subheader>팔로잉</v-subheader>
@@ -72,6 +86,9 @@
       },
       hasMoreFollower() {
         return this.$store.state.users.hasMoreFollower;
+      },
+       me() {
+        return this.$store.state.users.me;
       },
     },
     methods: {

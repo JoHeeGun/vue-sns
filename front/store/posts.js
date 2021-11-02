@@ -105,7 +105,6 @@ export const actions = {
       });
   },
   loadPosts: throttle(async function({ commit, state }, payload) {
-    console.log('loadPosts');
     try {
       if (payload && payload.reset) {
         const res = await this.$axios.get(`/posts?limit=10`);

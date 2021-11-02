@@ -2,7 +2,7 @@
   <v-container>
     <v-card style="margin-bottom: 20px">
       <v-container>
-        {{ other.nickname }}
+        {{ other.nickname }} 님의 프로필입니다
         <v-row>
           <v-col cols="4">{{ other.Followings.length }} 팔로잉</v-col>
           <v-col cols="4">{{ other.Followers.length }} 팔로워</v-col>
