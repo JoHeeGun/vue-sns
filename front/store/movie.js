@@ -1,12 +1,13 @@
 import axios from 'axios'
-
+import _uniqBy from 'lodash/uniqBy'
 
 export default {
   namespaced: true,
   state: () => ({
     title: '',
     loading: false,
-    movies: []
+    movies: [],
+    theMovie:[]
   }),
   getters: {},
   mutations: {
@@ -18,7 +19,7 @@ export default {
         })
     },
     pushIntoMovies (state, movies) {
-      state.movies.push(...movies)
+      state.movies.push(..._uniqBy(movies,'imdbID'))
     }
   },
   actions: {
@@ -30,7 +31,6 @@ export default {
       })
     },
     async searchMovies ({ commit , dispatch }) {
-
 
       commit('updateState', {
         loading: true,
@@ -50,6 +50,29 @@ export default {
       commit('updateState', {
         loading: false
       })
+    },
+    async searchMovieWithId({ state, commit}, payload) {
+      if(state.loading) return
+
+      commit('updateState',{
+        theMovie: {},
+        loading: true
+      })
+      try{
+        const res = await axios.get(`https://www.omdbapi.com/?apikey=95f11515&i=${payload.id}`)
+        console.log(res.data)
+        commit('updateState',{
+          theMovie:res.data
+        })
+      } catch(error) {
+        commit('updateState',{
+          theMovie:{}
+        })
+      }finally{
+        commit('updateState',{
+          loading:false
+        })
+      }
     }
   }
 }

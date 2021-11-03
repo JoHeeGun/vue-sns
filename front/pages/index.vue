@@ -1,5 +1,12 @@
 <template>
   <v-container>
+    <v-carousel interval="1000">
+      <v-carousel-item
+        v-for="(item,i) in items"
+        :key="i"
+        :src="item.src"
+      />
+    </v-carousel><br>
     <post-form v-if="me" />
     <search-hash-tag />
     <div>
@@ -22,6 +29,20 @@
     data() {
       return {
         name: 'Nuxt.js',
+        items: [
+        {
+          src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg'
+        },
+        {
+          src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg'
+        },
+        {
+          src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg'
+        },
+        {
+          src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg'
+        }
+      ]
       };
     },
     fetch({ store }) {
@@ -58,4 +79,5 @@
 </script>
 
 <style>
+
 </style>

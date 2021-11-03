@@ -14,4 +14,5 @@ module.exports = {
     baseURL:'http://localhost:3085',
     https:false,
   },
+  css:['./scss/main.scss'],
 };
