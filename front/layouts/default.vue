@@ -45,27 +45,17 @@
 
 <script>
   import { mapState } from 'vuex';
-import SearchHashTag from '../components/SearchHashTag.vue';
 
   export default {
-  // components: { SearchHashTag },
-    data() {
-      return {
-        hashtag: '',
-      };
-    },
     computed: {
       ...mapState('users', ['me']),
     },
     methods: {
-      onSearchHashtag() {
-        this.$router.push({
-          path: `/hashtag/${encodeURIComponent(this.hashtag)}`,
-        });
-        this.hashtag = '';
-      },
       onLogOut() {
-        this.$store.dispatch('users/logOut');
+        this.$store.dispatch('users/logOut')
+        this.$router.push({
+              path:'/',
+            });
       },
     },
   };

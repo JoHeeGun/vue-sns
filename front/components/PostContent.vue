@@ -27,7 +27,9 @@
 </template>
 
 <script>
+  import { mapState } from 'vuex';
   import PostImages from './PostImages';
+  
   export default {
     components: {
       PostImages,

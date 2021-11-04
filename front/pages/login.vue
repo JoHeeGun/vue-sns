@@ -40,6 +40,8 @@
 </template>
 
 <script>
+import { mapState } from 'vuex';
+
   export default {
     data() {
       return {
@@ -56,9 +58,7 @@
       };
     },
     computed: {
-      me() {
-        return this.$store.state.users.me;
-      },
+      ...mapState('users', ['me']),
     },
     methods: {
       onSubmitForm() {

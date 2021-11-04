@@ -7,7 +7,7 @@
           outlined
           auto-grow
           clearable
-          label="어떤 신기한 일이 있었나요?"
+          label="어떤 영화에 대해 이야기 하고 싶으신가요?"
           :hide-details="hideDetails"
           :success-messages="successMessages"
           :success="success"

@@ -47,6 +47,7 @@
 <script>
   import CommentForm from '~/components/CommentForm';
   import PostContent from '~/components/PostContent';
+  import { mapState } from 'vuex';
   
   export default {
     components: {
@@ -64,25 +65,23 @@
         commentOpened: false,
       };
     },
-    computed: {
-      me() {
-        return this.$store.state.users.me;
-      },
+
+      computed: {
+      ...mapState('users', ['me']),
       liked() {
         const me = this.$store.state.users.me;
         return !!(this.post.Likers || []).find(v => v.id === (me && me.id));
-      },
+      },      
       heartIcon() {
         return this.liked ? 'mdi-heart' : 'mdi-heart-outline';
       },
     },
+      
     methods: {
       onRemovePost() {
         this.$store.dispatch('posts/remove', {
           postId: this.post.id,
         });
-      },
-      onEditPost() {
       },
       onToggleComment() {
         if (!this.commentOpened) {

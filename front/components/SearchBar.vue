@@ -3,6 +3,7 @@
     <v-text-field
       v-model="title"
       outlined
+      placeholder="영화를 검색해보세요!"
       @keypress.enter="searchMovies"
     >
       <template #prepend-inner> 

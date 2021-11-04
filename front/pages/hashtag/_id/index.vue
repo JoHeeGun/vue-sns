@@ -8,6 +8,7 @@
 
 <script>
   import PostCard from '~/components/PostCard';
+  import { mapState } from 'vuex'
   export default {
     components: {
       PostCard,
@@ -24,9 +25,7 @@
       });
     },
     computed: {
-      mainPosts() {
-        return this.$store.state.posts.mainPosts;
-      },
+      ...mapState('posts', ['mainPosts'])
     },
     mounted() {
       window.addEventListener('scroll', this.onScroll);

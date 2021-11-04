@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-carousel interval="1000">
+    <v-carousel :cycle="true" :interval="3000">
       <v-carousel-item
         v-for="(item,i) in items"
         :key="i"
@@ -16,9 +16,11 @@
 </template>
 
 <script>
+  import { mapState } from 'vuex';  
   import PostCard from '~/components/PostCard';
   import PostForm from '~/components/PostForm';
   import SearchHashTag from '../components/SearchHashTag.vue';
+
 
   export default {
     components: {
@@ -31,16 +33,16 @@
         name: 'Nuxt.js',
         items: [
         {
-          src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg'
+          src: 'https://img.cgv.co.kr/Front/Main/2021/0913/16315036396800.jpg'
         },
         {
-          src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg'
+          src: 'https://img.cgv.co.kr/Front/Main/2021/1104/16360095814160.jpg'
         },
         {
-          src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg'
+          src: 'https://img.cgv.co.kr/Front/Main/2021/1104/16360095813380.jpg'
         },
         {
-          src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg'
+          src: 'https://img.cgv.co.kr/Front/Main/2021/1021/16347931161070.jpg'
         }
       ]
       };
@@ -49,15 +51,8 @@
       return store.dispatch('posts/loadPosts', { reset: true });
     },
     computed: {
-      me() {
-        return this.$store.state.users.me;
-      },
-      mainPosts() {
-        return this.$store.state.posts.mainPosts;
-      },
-      hasMorePost() {
-        return this.$store.state.posts.hasMorePost;
-      }
+      ...mapState('users', ['me']),
+      ...mapState('posts', ['mainPosts','hasMorePost'])
     },
     mounted() {
       window.addEventListener('scroll', this.onScroll);

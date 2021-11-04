@@ -44,6 +44,8 @@
 </template>
 
 <script>
+import { mapState } from 'vuex';
+
   export default {
     middleware: 'anonymous',
     data() {
@@ -76,9 +78,7 @@
       };
     },
     computed: {
-      me() {
-        return this.$store.state.users.me;
-      }
+      ...mapState('users', ['me']),
     },
     watch: {
       me(value) {

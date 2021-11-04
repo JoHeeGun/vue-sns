@@ -35,12 +35,14 @@
 </template>
 
 <script>
+import { mapState } from 'vuex';
+
 export default {
-  computed: {
-    movies () {
-      return this.$store.state.movie.movies
-    }
-  },
+
+    computed: {
+      ...mapState('movie', ['movies']),
+    },
+
   methods: {
     posterSrc (poster) {
       return poster === 'N/A' ? '' : poster

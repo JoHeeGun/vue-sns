@@ -48,7 +48,9 @@
 </template>
 
 <script>
+  import { mapState } from 'vuex';
   import FollowList from '~/components/FollowList';
+
   export default {
     components: {
       FollowList,
@@ -75,21 +77,7 @@
       };
     },
     computed: {
-      followerList() {
-        return this.$store.state.users.followerList;
-      },
-      followingList() {
-        return this.$store.state.users.followingList;
-      },
-      hasMoreFollowing() {
-        return this.$store.state.users.hasMoreFollowing;
-      },
-      hasMoreFollower() {
-        return this.$store.state.users.hasMoreFollower;
-      },
-       me() {
-        return this.$store.state.users.me;
-      },
+      ...mapState('users', ['me','followerList','followingList','hasMoreFollowing','hasMoreFollower']),
     },
     methods: {
       onChangeNickname() {
