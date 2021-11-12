@@ -18,6 +18,8 @@
           </v-btn>
         </v-toolbar-items>
         
+
+        
         <v-toolbar-items v-else>
           <v-btn text nuxt to="/movie" :style="{ display: 'flex', alignItems: 'center' }">
             <div>영화검색</div>
