@@ -76,7 +76,7 @@
         console.log(e.target.files);
         const imageFormData = new FormData();
         [].forEach.call(e.target.files, (f) => {
-          imageFormData.append('image', f);   // { image: [file1, file2] }
+          imageFormData.append('image', f);   
         });
         this.$store.dispatch('posts/uploadImages', imageFormData);
       },
