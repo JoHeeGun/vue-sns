@@ -26,71 +26,78 @@ useAPI : OMDBAPI
  
  <details><summary>로그인</summary>
  
-  ![예시 이미지](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/7a9233a7-d756-4ce6-96b9-e5bdfe9e573a/%E3%84%B9.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211115%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211115T153854Z&X-Amz-Expires=86400&X-Amz-Signature=d6d3aa42d06f75900b58cb6250dfe44a4ba722d3a5d692c8201ae3b67b3947a6&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25E3%2584%25B9.png%22)   
+  ![예시 이미지](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/67230a78-c2a9-46a4-b71f-1ee94de1ad58/3.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211116%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211116T075322Z&X-Amz-Expires=86400&X-Amz-Signature=85c695af9a94644c638b9d9234cc4280f809075987d50687a3a83b98662fbbbb&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%223.PNG.png%22)   
   * 로그인페이지 -> 아이디,비밀번호입력 -> 로그인버튼 -> 로그인
   * 우측 상단의 로그인탭 클릭 후 로그인페이지로 이동   
   * 이메일형식으로 아이디작성 (ex: joheegun@gmail.com)   
-  * 로그인 성공시 포스트작성 가능
+  * 로그인 성공시 게시글작성 가능   
+  * 회원가입버튼 클릭시 회원가입페이지로 이동   
  
  </details> 
  <details><summary>회원가입</summary>
  
-  ![예시 이미지](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9dda1e7e-232d-4579-ace7-b06c76ed77d8/%ED%9A%8C%EC%9B%90.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211115%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211115T154038Z&X-Amz-Expires=86400&X-Amz-Signature=948a6ce8c1363f815fd663288effe60e3e0cc3822f08e77d94a803ab31013929&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25ED%259A%258C%25EC%259B%2590.png%22)   
+  ![예시 이미지](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/3bbb4197-9f9d-4c17-a14c-66b5c6c978de/2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211116%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211116T075330Z&X-Amz-Expires=86400&X-Amz-Signature=6e007d0b0e54641622c678a5b9c1ce8ef381915a3765a44c5705738b0b594771&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%222.PNG.png%22)   
   * 회원가입페이지 -> 아이디,비밀번호등 개인정보 입력 -> 회원가입버튼 -> 회원가입완료
   * 상단의 회원가입탭 클릭 후 회원가입페이지로 이동   
-  * 이메일형식으로 아이디작성   
-  * 회원가입 성공시 로그인페이지로 이동   
+  * 이메일형식으로 아이디작성     
   </details>  
  <details><summary>영화 검색</summary>
  
-  ![예시 이미지](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/c8518dbb-dd27-42ab-b657-bab71f704790/%E3%85%88.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211115%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211115T154219Z&X-Amz-Expires=86400&X-Amz-Signature=348524afad7434829b27add26fcd1eb7ee77072b9b54e613035e93f1494009fd&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25E3%2585%2588.png%22)   
-   ![예시 이미지](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/bb0fb969-6a89-47cd-b079-d585ddac0ff7/%E3%85%91.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211115%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211115T154232Z&X-Amz-Expires=86400&X-Amz-Signature=b7f20b068958fa351d9516c3d2c18ef794fe6bad61e96638d1db9b570843115e&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25E3%2585%2591.png%22)   
-  * 상단 책 검색탭 클릭 후 검색페이지 이동
+  ![예시 이미지](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/46c41540-4aa3-4d82-aed2-ca9b38d28d32/13.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211116%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211116T075634Z&X-Amz-Expires=86400&X-Amz-Signature=ecb31b2075595b3c957ae8b507dc69716873f525cf54f42b17ce1fff7c68f601&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%2213.PNG.png%22)   
+   ![예시 이미지](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/e8b063b5-b5cd-47e0-8fec-c9f99adf6bcd/14.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211116%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211116T075636Z&X-Amz-Expires=86400&X-Amz-Signature=bd9f9b80e6b4360b642a4b3dfd62798d4442ad5c43335f01bfd21ddb90b77d31&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%2214.PNG.png%22)   
+  * 상단 영화 검색탭 클릭 후 검색페이지 이동
   * 로그인이 되어 있지 않는 비회원도 이용 가능한 서비스           
-  * 원하는 검색조건을 설정하고 검색버튼클릭   
-  * 검색조건에 따라 검색결과가 리스트형식으로 나열됨   
-  * 개별 아이템 클릭 시 해당 책에대한 URL로 이동   
+  * 원하는 검색조건을 설정하고 Enter Press 
+  * 검색조건에 따라 검색결과가 카드 리스트형식으로 나열됨   
+  * 개별 아이템 클릭 시 해당 책에대한 정보가 있는 페이지로 이동
+  * Vutifiy를 이용한 카드형식
   </details>  
  <details><summary>SNS게시글</summary>
  
-  ![예시 이미지](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/6309d035-8699-48d3-b4e6-0d72be65a886/%E3%85%8D.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211115%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211115T154654Z&X-Amz-Expires=86400&X-Amz-Signature=35b07d60af6e9b55fd17a825c50eaf784c1c0a956d56ff97053bfd48bd9dd2de&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25E3%2585%258D.png%22)    
-   ![예시 이미지](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39c15ff3-87d7-4fd4-9f53-d1d291cce72e/%E3%85%8B.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211115%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211115T154708Z&X-Amz-Expires=86400&X-Amz-Signature=dbb63cf3cc1b03d9dfd3a9d936c5947dbc285282ace63145bda9cf7459c43ffa&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25E3%2585%258B.png%22)    
-  * 삭제까지 같이 취급
-  * 로그인이 되어있는 회원만 이용가능한 서비스   
-  * 우측하단 작성아이콘 클릭 후 작성페이지 이동         
-  * 제목,내용을 입력하고 글 작성버튼 클릭   
-  * 자신이 포스트한 내용이 카드형태로 나타남   
-  * 수정,삭제아이콘 클릭시 해당 작업 수행   
+  ![예시 이미지](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/82306297-a6c5-4e67-a94b-1d345209d627/1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211116%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211116T080448Z&X-Amz-Expires=86400&X-Amz-Signature=e6e25f1e79db115a39be8691ea0bad696824f8121184f7e64931d6c0d1d0ef6a&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%221.PNG.png%22)    
+   ![예시 이미지](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/d8b54646-2975-420e-a0e0-d17640ce2911/2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211116%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211116T080504Z&X-Amz-Expires=86400&X-Amz-Signature=e5ae60ff42e6be969985ea9c341e3792dfdbed0f0a9c8a293b9036270da5c5e8&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%222.PNG.png%22)    
+  * 카드형식으로 사용자들의 게시글들이 나타남         
+  * 로그인이 되어있는 회원만 게시글작성 가능        
+  * 내용,이미지 등을 입력하고 업로드 버튼 클릭      
+  * 리트윗,좋아요,댓글,삭제 등을 material icon을 사용하여 클릭시 해당 서비스 이용      
   </details>   
         <details><summary>해시태그 검색</summary>
  
-  ![예시 이미지](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/6309d035-8699-48d3-b4e6-0d72be65a886/%E3%85%8D.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211115%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211115T154654Z&X-Amz-Expires=86400&X-Amz-Signature=35b07d60af6e9b55fd17a825c50eaf784c1c0a956d56ff97053bfd48bd9dd2de&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25E3%2585%258D.png%22)    
-   ![예시 이미지](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39c15ff3-87d7-4fd4-9f53-d1d291cce72e/%E3%85%8B.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211115%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211115T154708Z&X-Amz-Expires=86400&X-Amz-Signature=dbb63cf3cc1b03d9dfd3a9d936c5947dbc285282ace63145bda9cf7459c43ffa&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25E3%2585%258B.png%22)    
-  * 상단 나만의포스트탭 클릭 후 페이지 이동
+  ![예시 이미지](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/6de66987-3e5d-4137-bef9-581dff1037ec/3.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211116%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211116T080915Z&X-Amz-Expires=86400&X-Amz-Signature=27b965e3dbcfdde4ec6c096c674541f31e0bfd97827ade7522e092740ceeeaaa&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%223.PNG.png%22)    
+   ![예시 이미지](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/7b5ce960-5893-42c1-a58e-925b7ee0c6b5/4.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211116%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211116T080919Z&X-Amz-Expires=86400&X-Amz-Signature=81e81b62fa70c82297d8223acb5af10680e09b8f2e9cb40c4a852c347d70cec6&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%224.PNG.png%22)    
+  * 해시태그 검색창에서 원하는 검색어 입력   
+  * 해당 해시태그가 달려있는 게시물 나열(ex #겨울왕국)   
+ 
   </details>  
   <details><summary>SNS댓글</summary>
  
-  ![예시 이미지](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/6309d035-8699-48d3-b4e6-0d72be65a886/%E3%85%8D.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211115%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211115T154654Z&X-Amz-Expires=86400&X-Amz-Signature=35b07d60af6e9b55fd17a825c50eaf784c1c0a956d56ff97053bfd48bd9dd2de&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25E3%2585%258D.png%22)    
-   ![예시 이미지](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39c15ff3-87d7-4fd4-9f53-d1d291cce72e/%E3%85%8B.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211115%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211115T154708Z&X-Amz-Expires=86400&X-Amz-Signature=dbb63cf3cc1b03d9dfd3a9d936c5947dbc285282ace63145bda9cf7459c43ffa&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25E3%2585%258B.png%22)    
-  * 상단 나만의포스트탭 클릭 후 페이지 이동
-  </details>   
-    <details><summary>SNS리트윗 및 좋아요기능</summary>
+  ![예시 이미지](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/d86f9698-553c-48f0-8878-d31b79993965/7.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211116%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211116T081104Z&X-Amz-Expires=86400&X-Amz-Signature=5ac0a1db0cd85e426ac6f9980cd96f7a137208b0892ba434e3e67ec13e6a76c7&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%227.png%22)       
+  * 로그인이 되어있는 상태에만 댓글작성가능   
+  * 댓글아이콘 클릭 시 하단에 댓글작성창과 댓글들이 나타남   
  
-  ![예시 이미지](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/6309d035-8699-48d3-b4e6-0d72be65a886/%E3%85%8D.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211115%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211115T154654Z&X-Amz-Expires=86400&X-Amz-Signature=35b07d60af6e9b55fd17a825c50eaf784c1c0a956d56ff97053bfd48bd9dd2de&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25E3%2585%258D.png%22)    
-   ![예시 이미지](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39c15ff3-87d7-4fd4-9f53-d1d291cce72e/%E3%85%8B.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211115%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211115T154708Z&X-Amz-Expires=86400&X-Amz-Signature=dbb63cf3cc1b03d9dfd3a9d936c5947dbc285282ace63145bda9cf7459c43ffa&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25E3%2585%258B.png%22)    
-  * 상단 나만의포스트탭 클릭 후 페이지 이동
+  </details>   
+    <details><summary>SNS리트윗</summary>
+ 
+  ![예시 이미지](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b2ff15b5-eadc-4b0f-85e2-1a601404e12e/1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211116%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211116T083229Z&X-Amz-Expires=86400&X-Amz-Signature=42b37e0336fd45ad31a27395d5cca9c1cf02a4c979b5d06fb8a6cc1e023d2514&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%221.PNG.png%22)    
+   ![예시 이미지](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/60e7a142-aee6-466a-a5af-63194f6f4b8f/2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211116%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211116T083232Z&X-Amz-Expires=86400&X-Amz-Signature=6a5d0d4a5bb8c08fb0662231986ea3e4262b7de18f0e850db5c79e6c517f0f64&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%222.PNG.png%22)    
+ * 로그인된 사용자만 이용 가능한 서비스   
+ * 리트윗하기위해 게시글의 리트윗 아이콘 클릭   
+ * 상단에 리트윗했다는 메세지와함께 해당 게시글 리트윗    
   </details>  
         <details><summary>팔로우 및 팔로잉</summary>
  
-  ![예시 이미지](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/6309d035-8699-48d3-b4e6-0d72be65a886/%E3%85%8D.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211115%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211115T154654Z&X-Amz-Expires=86400&X-Amz-Signature=35b07d60af6e9b55fd17a825c50eaf784c1c0a956d56ff97053bfd48bd9dd2de&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25E3%2585%258D.png%22)    
-   ![예시 이미지](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39c15ff3-87d7-4fd4-9f53-d1d291cce72e/%E3%85%8B.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211115%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211115T154708Z&X-Amz-Expires=86400&X-Amz-Signature=dbb63cf3cc1b03d9dfd3a9d936c5947dbc285282ace63145bda9cf7459c43ffa&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25E3%2585%258B.png%22)    
-  * 상단 나만의포스트탭 클릭 후 페이지 이동
+  ![예시 이미지](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/3bbbf81b-4b0d-4e83-9c61-337ee382d0c7/1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211116%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211116T084200Z&X-Amz-Expires=86400&X-Amz-Signature=c10c8aef10036b7405803a8c3adc18f08ab9bbf4b4d86ce1675473d78aef0ed7&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%221.PNG.png%22)       
+  * 로그인된 사용자만 가능한 서비스    
+  * 게시글에있는 버튼으로 팔로우,언팔로우 가능   
+  * 팔로우 및 팔로잉된 사용자는 프로필에서 확인가능   
   </details> 
       <details><summary>프로필</summary>
  
-  ![예시 이미지](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/6309d035-8699-48d3-b4e6-0d72be65a886/%E3%85%8D.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211115%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211115T154654Z&X-Amz-Expires=86400&X-Amz-Signature=35b07d60af6e9b55fd17a825c50eaf784c1c0a956d56ff97053bfd48bd9dd2de&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25E3%2585%258D.png%22)    
-   ![예시 이미지](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/39c15ff3-87d7-4fd4-9f53-d1d291cce72e/%E3%85%8B.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211115%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211115T154708Z&X-Amz-Expires=86400&X-Amz-Signature=dbb63cf3cc1b03d9dfd3a9d936c5947dbc285282ace63145bda9cf7459c43ffa&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25E3%2585%258B.png%22)    
-  * 상단 나만의포스트탭 클릭 후 페이지 이동
+  ![예시 이미지](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/e8d7fbd5-edb2-47ef-b708-c755a20e84b2/2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211116%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211116T084514Z&X-Amz-Expires=86400&X-Amz-Signature=3402a7811d4c30412065b645f92dc776fc4df90162ef19e4391acf8c4f6b4651&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%222.PNG.png%22)       
+  * 로그인시 상단에 프로필탭이 나타남   
+  * 자신의 팔로잉 및 팔로워 수, 게시글수를 볼 수 있음   
+  * 자신의 닉네임을 변경할 수 있음   
+  * 팔로잉 및 팔로워 리스트에서 사용자클릭시 해당사용자의 게시글을 모아 볼 수 있음   
   </details>  
  
    
