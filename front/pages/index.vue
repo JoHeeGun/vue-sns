@@ -17,9 +17,9 @@
 
 <script>
   import { mapState } from 'vuex';  
-  import PostCard from '~/components/PostCard';
-  import PostForm from '~/components/PostForm';
-  import SearchHashTag from '../components/SearchHashTag.vue';
+  import PostCard from '~/components/sns/PostCard';
+  import PostForm from '~/components/sns/PostForm';
+  import SearchHashTag from '../components/sns/SearchHashTag.vue';
 
 
   export default {

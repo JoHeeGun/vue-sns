@@ -8,7 +8,7 @@
       </h3>
     </v-card-title>
     <v-card-text>
-      <post-images :images="post.Images || []" />
+      <post-images :images="post.Images || []" /><br>
       <div>
         <template v-for="(node, i) in nodes">
           <nuxt-link

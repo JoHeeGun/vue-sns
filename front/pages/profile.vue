@@ -51,7 +51,7 @@
 
 <script>
   import { mapState } from 'vuex';
-  import FollowList from '~/components/FollowList';
+  import FollowList from '~/components/sns/FollowList';
 
   export default {
     components: {

@@ -2,6 +2,7 @@
   <v-card style="margin-bottom: 20px">
     <v-container>
       <v-form ref="form" v-model="valid" @submit.prevent="onSubmitForm">
+        <div>{{ me.nickname }}님 환영합니다!</div> <br>
         <v-textarea
           v-model="content"
           outlined

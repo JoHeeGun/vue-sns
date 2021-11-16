@@ -7,7 +7,7 @@
 </template>
 
 <script>
-  import PostCard from '~/components/PostCard';
+  import PostCard from '~/components/sns/PostCard';
   import { mapState } from 'vuex'
   export default {
     components: {

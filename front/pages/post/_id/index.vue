@@ -8,7 +8,7 @@
 </template>
 
 <script>
-  import PostCard from '~/components/PostCard';
+  import PostCard from '~/components/sns/PostCard';
   
   export default {
     components: {

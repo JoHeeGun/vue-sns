@@ -2,7 +2,12 @@
   <v-list>
     <v-col v-for="user in users" :key="user.id" cols="12" md="4" style="display: inline-block">
       <v-list-item>
-          <span class="white--text headline">{{ user.nickname[0] }}</span>
+        <v-card-title>
+          <h3>
+            <nuxt-link :to="'/user/' + user.id">{{ user.nickname[0] }}</nuxt-link>
+          </h3>
+        </v-card-title>
+
         <v-list-item-content>
           <v-list-item-title>{{ user.nickname }}</v-list-item-title>
         </v-list-item-content>

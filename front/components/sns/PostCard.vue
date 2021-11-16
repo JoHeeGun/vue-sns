@@ -45,8 +45,8 @@
 </template>
 
 <script>
-  import CommentForm from '~/components/CommentForm';
-  import PostContent from '~/components/PostContent';
+  import CommentForm from '~/components/sns/CommentForm';
+  import PostContent from '~/components/sns/PostContent';
   import { mapState } from 'vuex';
   
   export default {
