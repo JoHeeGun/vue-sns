@@ -1,5 +1,5 @@
 <template>
-  <v-form ref="form" v-model="valid" style="position: relative" @submit.prevent="onSubmitForm">
+  <v-form v-if="me" ref="form" v-model="valid" style="position: relative" @submit.prevent="onSubmitForm">
     <v-textarea
       v-model="content"
       filled
