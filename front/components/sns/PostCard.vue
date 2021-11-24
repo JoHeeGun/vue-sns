@@ -10,7 +10,7 @@
       <post-content v-else :post="post" />
       <v-card-actions>
         <v-btn text color="orange" @click="onRetweet">
-          <v-icon>mdi-autorenew</v-icon>
+          <v-icon>mdi-repeat-variant</v-icon>
         </v-btn>
         <v-btn text color="orange" @click="onClickHeart">
           <v-icon>{{ heartIcon }}</v-icon>
