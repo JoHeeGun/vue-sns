@@ -53,8 +53,7 @@ export const mutations = {
 
 export const actions = {
   add({ commit, state }, payload) {
-    // 서버에 게시글 등록 요청 보냄
-    this.$axios.post('/post', {
+     this.$axios.post('/post', {
       content: payload.content,
       image: state.imagePaths,
     }, {

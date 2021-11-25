@@ -5,10 +5,6 @@
       filled
       auto-grow
       label="댓글 달기"
-      :hide-details="hideDetails"
-      :success="success"
-      :success-messages="successMessages"
-      @input="onChangeTextarea"
     />
     <v-btn color="gray" dark absolute top right type="submit">작성</v-btn>
   </v-form>
@@ -26,9 +22,6 @@
       return {
         valid: false,
         content: '',
-        success: false,
-        successMessages: '',
-        hideDetails: true,
       };
     },
     computed: {
@@ -37,13 +30,6 @@
       },
     },
     methods: {
-      onChangeTextarea(value) {
-        if (value.length) {
-          this.hideDetails = true;
-          this.success = false;
-          this.successMessages = '';
-        }
-      },
       onSubmitForm() {
         if (this.$refs.form.validate()) {
           this.$store.dispatch('posts/addComment', {
@@ -52,9 +38,6 @@
           })
             .then(() => {
               this.content = '';
-              this.success = true;
-              this.successMessages = '댓글이 작성되었습니다.';
-              this.hideDetails = false;
             })
             .catch(() => {
             });

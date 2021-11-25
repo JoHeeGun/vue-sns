@@ -47,9 +47,6 @@
           })
             .then(() => {
               this.content = '';
-              this.hideDetails = false;
-              this.success = true;
-              this.successMessages = '게시글 등록 성공!';
             })
             .catch(() => {
             });
@@ -59,7 +56,6 @@
         this.$refs.imageInput.click();
       },
       onChangeImages(e) {
-        console.log(e.target.files);
         const imageFormData = new FormData();
         [].forEach.call(e.target.files, (f) => {
           imageFormData.append('image', f);   
