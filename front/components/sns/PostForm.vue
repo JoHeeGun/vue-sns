@@ -9,11 +9,6 @@
           auto-grow
           clearable
           label="어떤 영화에 대해 이야기 하고 싶으신가요?"
-          :hide-details="hideDetails"
-          :success-messages="successMessages"
-          :success="success"
-          :rules="[v => !!v.trim() || '내용을 입력하세요.']"
-          @input="onChangeTextarea"
         />
         <v-btn type="submit" color="gray" absolute right>업로드</v-btn>
         <input ref="imageInput" type="file" multiple hidden @change="onChangeImages">
@@ -37,9 +32,6 @@
     data() {
       return {
         valid: false,
-        hideDetails: true,
-        successMessages: '',
-        success: false,
         content: '',
       };
     },
@@ -48,13 +40,6 @@
       ...mapState('posts', ['imagePaths'])
     },
     methods: {
-      onChangeTextarea(value) {
-        if (value.length) {
-          this.hideDetails = true;
-          this.success = false;
-          this.successMessages = '';
-        }
-      },
       onSubmitForm() {
         if (this.$refs.form.validate()) {
           this.$store.dispatch('posts/add', {
