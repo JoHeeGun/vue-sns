@@ -24,7 +24,7 @@
       </v-form>
     </v-card>
   </v-container>
- </template>
+</template>
 
 <script>
 import { mapState } from 'vuex';
@@ -63,9 +63,6 @@ import { mapState } from 'vuex';
             alert('로그인 실패');
           })
         }
-      },
-      onLogOut() {
-        this.$store.dispatch('users/logOut');
       },
     },
   };

@@ -84,7 +84,6 @@ export const actions = {
       withCredentials: true,
     })
       .then((res) => {
-        console.log('addComment');
         commit('addComment', res.data);
       })
       .catch(() => {
