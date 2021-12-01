@@ -88,7 +88,7 @@ export const actions = {
       withCredentials: true,
     })
       .then((res) => {
-        commit('setMe', res.data);
+        
       })
       .catch((err) => {
         console.error(err);
